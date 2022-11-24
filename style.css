@@ -79,7 +79,7 @@
 }
 
 .bb {
-    border-bottom: 3px solid var(--darkWhite);
+    border-bottom: 2px solid var(--themeColor);
 }
 
 
@@ -90,7 +90,7 @@
 }
 
 .logo img {
-    height: 50px;
+    height: 70px;
 }
 
 .top-left p {
@@ -176,7 +176,7 @@ thead {
     text-align: center;
     vertical-align: middle;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid var(--themeColor);
     border-collapse: collapse;
 }
 
@@ -214,7 +214,7 @@ tr td:first-child {
 }
 
 tfoot {
-    border-top: 2px solid var(--darkWhite);
+    border-top: 2px solid var(--themeColor);
 }
 
 tfoot td {
