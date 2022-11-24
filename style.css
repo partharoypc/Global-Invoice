@@ -4,7 +4,7 @@
     --darkWhite: #ccc;
     --black: #000000;
     --dark: #615c60;
-    --themeColor: #058466;
+    --themeColor: #1958F5;
     --pageShadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
 }
 
@@ -12,21 +12,70 @@
 /* Font Include */
 
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
-body {
-    background-color: var(--body-bg);
-}
-
 .page {
     background: var(--white);
     display: block;
     margin: 0 auto;
     position: relative;
     box-shadow: var(--pageShadow);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.page[size="A4"] {
-    width: 21cm;
-    height: 29.7cm;
+.page {
+    max-width: 21cm;
+    max-height: 29.7cm;
+}
+
+.main-body {
+    padding: 40px;
+}
+
+@media only screen and (max-width: 580px) {
+    .page {
+        box-shadow: none;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    body {
+        font-size: 11px;
+    }
+    .page {
+        margin: 0 auto;
+        width: auto;
+        max-height: auto;
+        box-shadow: none;
+    }
+    .main-body {
+        padding: 30px 10px 10px 10px !important;
+    }
+    .top-content {
+        padding-bottom: 10px !important;
+    }
+    .top-left .graphic-path {
+        height: 30px !important;
+    }
+    .top-left .graphic-path p {
+        height: 25px !important;
+        right: -10px !important;
+    }
+    .top-left .graphic-path::before {
+        height: 13px;
+        left: 13px;
+        right: 0;
+        top: -13px;
+        z-index: 2;
+    }
+    .top-left .graphic-path::after {
+        content: "";
+        height: 22px !important;
+        width: 12px !important;
+        top: -14px !important;
+    }
+    h2 {
+        font-size: 13px !important;
+    }
 }
 
 .bb {
@@ -88,15 +137,12 @@ body {
     padding-left: 10px;
 }
 
-@media only screen and (max-width: 480px) {
-    .
-}
-
 
 /* User Store Section */
 
 .store-user {
     padding-bottom: 25px;
+    margin-top: 25px;
 }
 
 .store-user p {
@@ -139,11 +185,6 @@ tr td:first-child {
     text-align: left;
 }
 
-.media img {
-    height: 60px;
-    width: 60px;
-}
-
 .media p {
     font-weight: 400;
     margin: 0;
@@ -155,6 +196,12 @@ tr td:first-child {
 
 
 /* Balance Info Section */
+
+.balance-info {
+    display: block;
+    margin: 0 auto;
+    padding: 0 auto;
+}
 
 .balance-info .table td,
 .balance-info .table th {
@@ -183,23 +230,10 @@ footer {
     width: 100%;
 }
 
-footer hr {
-    position: absolute;
-    width: 100% !important;
-    margin-bottom: -22px;
-    border-top: 3px solid var(--darkWhite);
-}
-
-footer a {
-    color: var(--themeColor);
-    list-style: none;
-    align-items: center;
-}
-
 footer p {
     width: max-content;
-    padding: 6px;
-    border: 3px solid var(--darkWhite);
+    padding: 3px;
+    border: 2px solid var(--darkWhite);
     background-color: var(--white);
     display: block;
 }
@@ -213,4 +247,8 @@ footer p {
 
 .subtotal-value {
     text-align: end !important;
+}
+
+.company-name {
+    color: #1958F5;
 }
