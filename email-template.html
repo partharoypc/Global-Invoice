@@ -13,24 +13,15 @@
     <title>Invoice..!</title>
 
     <style>
-         :root {
-            --body-bg: rgb(204, 204, 204);
-            --white: #ffffff;
-            --darkWhite: #ccc;
-            --black: #000000;
-            --dark: #615c60;
-            --themeColor: #1958F5;
-            --pageShadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
-        }
         /* Font Include */
         
         @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
         .page {
-            background: var(--white);
+            background: white;
             display: block;
             margin: 0 auto;
             position: relative;
-            box-shadow: var(--pageShadow);
+            box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
             margin-top: 20px;
             margin-bottom: 20px;
         }
@@ -89,10 +80,13 @@
             h2 {
                 font-size: 13px !important;
             }
+            .company-name {
+                font-size: 13px !important;
+            }
         }
         
         .bb {
-            border-bottom: 2px solid var(--themeColor);
+            border-bottom: 2px solid #1958F5;
         }
         /* Top Section */
         
@@ -116,7 +110,7 @@
         .top-left .graphic-path::before {
             content: "";
             height: 20px;
-            background-color: var(--dark);
+            background-color: #615c60;
             position: absolute;
             left: 15px;
             right: 0;
@@ -128,7 +122,7 @@
             content: "";
             height: 22px;
             width: 17px;
-            background: var(--black);
+            background: black;
             position: absolute;
             top: -13px;
             left: 6px;
@@ -136,12 +130,12 @@
         }
         
         .top-left .graphic-path p {
-            color: var(--white);
+            color: white;
             height: 40px;
             left: 0;
             right: -40px;
             text-transform: uppercase;
-            background-color: var(--themeColor);
+            background-color: #1958F5;
             font: 26px;
             z-index: 3;
             position: absolute;
@@ -164,7 +158,7 @@
         }
         
         .store-user h2 {
-            color: var(--themeColor);
+            color: #1958F5;
             font-family: 'Rajdhani', sans-serif;
         }
         
@@ -174,8 +168,8 @@
         /* Product Section */
         
         thead {
-            color: var(--white);
-            background: var(--themeColor);
+            color: white;
+            background: #1958F5;
         }
         
         .table td,
@@ -183,7 +177,7 @@
             text-align: center;
             vertical-align: middle;
             padding: 10px;
-            border: 1px solid var(--themeColor);
+            border: 1px solid #1958F5;
             border-collapse: collapse;
         }
         
@@ -219,7 +213,7 @@
         }
         
         tfoot {
-            border-top: 2px solid var(--themeColor);
+            border-top: 2px solid #1958F5;
         }
         
         tfoot td {
@@ -236,8 +230,8 @@
         footer p {
             width: max-content;
             padding: 3px;
-            border: 2px solid var(--darkWhite);
-            background-color: var(--white);
+            border: 2px solid #ccc;
+            background-color: white;
             display: block;
         }
         /* GST */
@@ -252,6 +246,7 @@
         
         .company-name {
             color: #1958F5;
+            font-size: 22px;
         }
     </style>
 </head>
@@ -278,14 +273,14 @@
                     <div class="row bb pb-3">
                         <div class="col-6">
                             <p>Provider,</p>
-                            <h2 style="font-size: 22px;">Sikder International IT Hub Private Limited
+                            <h2 class="company-name">Sikder International IT Hub Private Limited
                             </h2>
                             <p class="address"> Babanpur, Benegal Enamel,<br> West Bengal 743122</p>
                             <div class="txn mt-2">TXN: XXXXXXX</div>
                         </div>
                         <div class="col-6">
                             <p>Client,</p>
-                            <h2 style="font-size: 22px;">Joy Mohonto</h2>
+                            <h2 class="company-name">Joy Mohonto</h2>
                             <p class="address"> Babanpur, Benegal Enamel,<br> West Bengal 743122</p>
                             <div class="txn mt-2">TXN: XXXXXXX</div>
                         </div>
@@ -314,18 +309,6 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                                <div class="media">
-                                    <div class="media-body">
-                                        <p class="mt-0 title">Bajaj Flora 3Litter Water Heater</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>2711.86</td>
-                            <td>1</td>
-                            <td>2711.86</td>
-                        </tr>
                         <tr>
                             <td>
                                 <div class="media">
@@ -444,7 +427,7 @@
             <footer class="col-12 mt-2">
 
 
-                <p class="text-center company-name m-1">
+                <p class="text-center company-name m-2">
                     Sikder International IT Hub Private Limited
                 </p>
                 <!-- Signature -->
