@@ -1,16 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Invoice..!</title>
+
 
     <style>
         /* Font Include */
@@ -86,6 +88,10 @@
             .company-name {
                 font-size: 12px !important;
             }
+            .top-left {
+                width: 80px !important;
+                right: 0;
+            }
         }
         
         .bb {
@@ -99,6 +105,11 @@
         
         .logo img {
             height: 70px;
+        }
+        
+        .top-left {
+            width: 130px;
+            right: 0;
         }
         
         .top-left p {
@@ -147,7 +158,6 @@
         /* User Store Section */
         
         .store-user {
-            padding-bottom: 25px;
             margin-top: 25px;
         }
         
@@ -224,13 +234,12 @@
         }
         /* Footer Section */
         
-        footer {
-            position: fixed;
+        .footer {
             bottom: 0;
             width: 100%;
         }
         
-        footer p {
+        .footer p {
             width: max-content;
             padding: 3px;
             border: 2px solid #ccc;
@@ -251,193 +260,228 @@
             color: #1958F5;
             font-size: 21px;
         }
+        
+        hr {
+            border: solid 1px #1958F5;
+        }
     </style>
 </head>
 
-<body>
-    <div class="page" size="A4">
-        <div class="main-body">
-            <section class="top-content bb d-flex  justify-content-between">
-                <div class="logo">
-                    <img src="https://github.com/partharoypc/Global-Invoice/blob/main/sikderIt.jpg?raw=true" alt="" class="img-fluid">
-                </div>
-                <div class="top-left">
-                    <div class="graphic-path">
-                        <p>Invoice</p>
-                    </div>
-                    <div class="position-relative">
-                        <p>Invoice No. <span>XXXX</span></p>
-                    </div>
-                </div>
-            </section>
+<body class="">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="page">
+        <tr>
+            <td>&nbsp;</td>
+            <td class="main-body">
 
-            <section class="store-user">
-                <div class="col-12">
-                    <div class="row bb pb-3">
-                        <div class="col-6">
-                            <p>Provider,</p>
-                            <h2 class="company-name">Sikder International IT Hub Private Limited
-                            </h2>
-                            <p class="address"> Babanpur, Benegal Enamel,<br> West Bengal 743122</p>
-                            <div class="txn mt-2">TXN: XXXXXXX</div>
-                        </div>
-                        <div class="col-6">
-                            <p>Client,</p>
-                            <h2 class="company-name">Joy Mohonto</h2>
-                            <p class="address"> Babanpur, Benegal Enamel,<br> West Bengal 743122</p>
-                            <div class="txn mt-2">TXN: XXXXXXX</div>
-                        </div>
-                    </div>
-                    <div class="row extra-info pt-3">
-                        <div class="col-7">
-                            <p>Payment Method: <span>Gpay</span></p>
-                            <p>Order Number: <span>#868</span></p>
-                        </div>
-                        <div class="col-5">
-                            <p>Deliver Date: <span>21-11.2022</span></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="product-area mt-4">
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <td>Item Description</td>
-                            <td>Price</td>
-                            <td>Quantity</td>
-                            <td>Total</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="media">
-                                    <div class="media-body">
-                                        <p class="mt-0 title">Bajaj Flora 3Litter Water Heater</p>
+                <div class="content">
+                    <div class="header">
+                        <table style="width:100%" role="presentation" border="0" cellpadding="0" cellspacing="0">
+                            <tr class="top-content  d-flex  justify-content-between">
+                                <td class="logo">
+                                    <img src="https://github.com/partharoypc/Global-Invoice/blob/main/sikderIt.jpg?raw=true" alt="" class="img-fluid">
+                                </td>
+                                <td class="top-left">
+                                    <div class="graphic-path">
+                                        <p>Invoice</p>
                                     </div>
-                                </div>
-                            </td>
-                            <td>2711.86</td>
-                            <td>1</td>
-                            <td>2711.86</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="media">
-                                    <div class="media-body">
-                                        <p class="mt-0 title">Bajaj Flora 3Litter Water Heater</p>
+                                    <div class="position-relative">
+                                        <p>Invoice No. <span>XXXX</span></p>
                                     </div>
-                                </div>
-                            </td>
-                            <td>2711.86</td>
-                            <td>1</td>
-                            <td>2711.86</td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <div class="media">
-                                    <div class="media-body">
-                                        <p class="mt-0 title">Bajaj Flora 3Litter Water Heater</p>
-
-                                    </div>
-                                </div>
-                            </td>
-                            <td>2711.86</td>
-                            <td>1</td>
-                            <td>2711.86</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="media">
-                                    <div class="media-body">
-                                        <p class="mt-0 title">Bajaj Flora 3Litter Water Heater</p>
-
-                                    </div>
-                                </div>
-                            </td>
-                            <td>2711.86</td>
-                            <td>1</td>
-                            <td>2711.86</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="media">
-
-                                    <div class="media-body gst-btn">
-                                        <p class="mt-0 title">CGST @9%</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>9</td>
-                            <td>%</td>
-                            <td>244.07</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="media">
-                                    <div class="media-body gst-btn">
-                                        <p class="mt-0 title ">SGST @9%</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>9</td>
-                            <td>%</td>
-                            <td>244.07</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <section class="balance-info col-12">
-                <div class="row ">
-                    <div class="col-7">
-                        <p class="m-0 font-weight-bold "> Declaration: </p>
-                        <p>We declare that this invoice shows the actual price of the goods described and that all particulars are true and correct.</p>
-                    </div>
-                    <div class="col-5 ">
-                        <table class="table border-0 table-hover subtotal-value">
-                            <tr>
-                                <td>Sub Total:</td>
-                                <td id="subtotal-value" class="subtotal-value">2711.86</td>
+                                </td>
                             </tr>
-                            <tr>
-                                <td>GST:</td>
-                                <td id="total-gst" class="subtotal-value">498.14</td>
+                            <tr style="width: 100%;">
+                                <td colspan="2">
+                                    <hr>
+                                </td>
                             </tr>
-                            <tr>
-                                <td>Deliver:</td>
-                                <td id="delivery-value" class="subtotal-value">00</td>
-                            </tr>
-                            <tfoot>
-                                <tr>
-                                    <td>Total:</td>
-                                    <td id="total-price" class="subtotal-value">3200.00</td>
-                                </tr>
-                            </tfoot>
                         </table>
-                        <div class="col-16 mt-2">
-                            <img src="https://github.com/partharoypc/Global-Invoice/blob/main/signature.png?raw=true" class="img-fluid " alt=" ">
-                            <p class="text-center m-0 "> Director Signature </p>
-                        </div>
                     </div>
+                    <div class="info">
+                        <div class="store-user">
+                            <table style="width:100%" role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                <tr class="top-content  d-flex  justify-content-between">
+                                    <td class="">
+                                        <p>Provider,</p>
+                                        <h2 class="company-name">Sikder International IT Hub Private Limited
+                                        </h2>
+                                        <p class="address"> Babanpur, Benegal Enamel,<br> West Bengal 743122</p>
+                                        <div class="txn mt-2">GSTIN:19ABFCS7665A1Z5</div>
+                                    </td>
+                                    <td class="">
+                                        <p>Client,</p>
+                                        <h2 class="company-name">Joy Mohonto</h2>
+                                        <p class="address"> Babanpur, Benegal Enamel,<br> West Bengal 743122</p>
+                                        <div class="txn mt-2">GSTIN: </div>
+                                    </td>
+                                </tr>
+                                <tr style="width: 100%;">
+                                    <td colspan="2" style="margin: 5px;">
+                                        <hr>
+                                    </td>
+                                </tr>
+
+                                <tr class="top-content d-flex mt-2  justify-content-between">
+                                    <td class="">
+                                        <p>Payment Method: <span>Gpay</span></p>
+                                        <p>Order Number: <span>#868</span></p>
+                                    </td>
+                                    <td class="">
+                                        <p>Deliver Date: <span>21-11.2022</span></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-area" style="margin-top: 20px;">
+                        <table class="table table-hover" style="width:100%; border: solid 1px #1958F5; border-collapse: collapse;">
+                            <thead>
+                                <tr>
+                                    <td>Item Description</td>
+                                    <td>Price</td>
+                                    <td>Quantity</td>
+                                    <td>Total</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <p class="mt-0 title">Bajaj Flora 3Litter Water Heater</p>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>2711.86</td>
+                                    <td>1</td>
+                                    <td>2711.86</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <p class="mt-0 title">Bajaj Flora 3Litter Water Heater</p>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>2711.86</td>
+                                    <td>1</td>
+                                    <td>2711.86</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="media">
+
+                                            <div class="media-body gst-btn">
+                                                <p class="mt-0 title">CGST @9%</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>9</td>
+                                    <td>%</td>
+                                    <td>244.07</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="media">
+                                            <div class="media-body gst-btn">
+                                                <p class="mt-0 title ">SGST @9%</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>9</td>
+                                    <td>%</td>
+                                    <td>244.07</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <table role="presentation" class="main">
+
+                        <tr>
+                            <td class="balance-info">
+                                <table style="width: 100%;" role="presentation" cellpadding="0" cellspacing="0">
+                                    <tr class="top-content  d-flex  justify-content-between">
+                                        <td class="" style="width: 70%; padding-right: 5px; margin: 0;">
+                                            <p class="m-0 font-weight-bold "> Declaration: </p>
+                                            <p>We declare that this invoice shows ,the actual price of the goods described and that all particulars are true and correct.</p>
+                                        </td>
+
+                                        <td class="" style="width: 30%;right: 0;">
+                                            <table style="width: 100%;" class="table border-0 table-hover subtotal-value">
+                                                <tr>
+                                                    <td>Sub Total:</td>
+                                                    <td id="subtotal-value" class="subtotal-value">2711.86</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>GST:</td>
+                                                    <td id="total-gst" class="subtotal-value">498.14</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Deliver:</td>
+                                                    <td id="delivery-value" class="subtotal-value">00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <hr style="margin: 0;">
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        Total:</td>
+                                                    <td id="total-price" class="subtotal-value">3200.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="margin: 5px;"></td>
+                                                </tr>
+
+                                                <tr class="mt-4" style="margin: 5px;">
+                                                    <td colspan="2" style="text-align: center; margin-top: 10px !important; ">
+                                                        <div style="padding-top: 20px;">
+                                                            <img src="https://github.com/partharoypc/Global-Invoice/blob/main/signature.png?raw=true" width="120px" alt=" ">
+                                                            <h5 style="font-size: 16px; margin: 0;">Director Signature </h5>
+                                                        </div>
+
+                                                    </td>
+
+                                                </tr>
+
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+
+                        </tr>
+                        <!-- END MAIN CONTENT AREA -->
+                    </table>
+
+
+
+                    <!-- START FOOTER -->
+                    <div class="footer">
+                        <table style="width: 100%;" role="presentation" border="0" cellpadding="0" cellspacing="0">
+                            <tr class="d-flex  justify-content-between">
+                                <td class="company-name m-0" style="font-size: 13px;">
+                                    Sikder International IT Hub Private Limited
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- END FOOTER -->
+
+                    <!-- END CENTERED WHITE CONTAINER -->
                 </div>
-
-            </section>
-            <footer class="col-12 mt-2">
-
-
-                <p class="text-center company-name mt-2">
-                    Sikder International IT Hub Private Limited
-                </p>
-                <!-- Signature -->
-
-            </footer>
-        </div>
-    </div>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
 </body>
 
 </html>
